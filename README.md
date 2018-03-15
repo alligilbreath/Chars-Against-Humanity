@@ -1,7 +1,7 @@
 Author: <br>
 NetID: <br>
 Date: <br>
-Project Name: project_7 <br>
+Project Name: project_6 <br>
 Course Name: ece275 <br>
 
 # Project 6: Chars
