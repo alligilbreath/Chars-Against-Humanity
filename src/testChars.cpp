@@ -31,6 +31,11 @@ void CharsTester::RunTests() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testConstructWordWithCarriageReturn() {
+    Word myWord = Word("Hello\r\n");
+    if(myWord.GetContent().compare("Hello") == 0)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -39,6 +44,11 @@ bool CharsTester::testConstructWordWithCarriageReturn() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testConstructWordWithNewLine() {
+    Word myWord = Word("Hello\n");
+    if(myWord.GetContent().compare("Hello") == 0)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -47,6 +57,11 @@ bool CharsTester::testConstructWordWithNewLine() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testIsWordValidWithSpace() {
+    Word myWord = Word("Hello man");
+    if(!myWord.IsValid())
+    {
+        return true;
+    }
     return false;
 }
 
@@ -55,6 +70,11 @@ bool CharsTester::testIsWordValidWithSpace() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testIsWordValidPercentSign() {
+    Word myWord = Word("Two%");
+    if(myWord.IsValid())
+    {
+        return true;
+    }
     return false;
 }
 
@@ -63,6 +83,11 @@ bool CharsTester::testIsWordValidPercentSign() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testIsWordValidShortWord() {
+    Word myWord = Word("a");
+    if(!myWord.IsValid())
+    {
+        return true;
+    }
     return false;
 }
 
@@ -71,6 +96,11 @@ bool CharsTester::testIsWordValidShortWord() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testConstructCardWithCarriageReturn() {
+    Card myCard = Card("His name was ___\r\n");
+    if(myCard.GetContent().compare("His name was ___") == 0)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -79,6 +109,11 @@ bool CharsTester::testConstructCardWithCarriageReturn() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testConstructCardWithNewLine() {
+    Card myCard = Card("His name was ___\n");
+    if(myCard.GetContent().compare("His name was ___") == 0)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -87,6 +122,11 @@ bool CharsTester::testConstructCardWithNewLine() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testIsCardValidNoBlank() {
+    Card myCard = Card("Hello");
+    if(!myCard.IsValid())
+    {
+        return true;
+    }
     return false;
 }
 
@@ -95,6 +135,11 @@ bool CharsTester::testIsCardValidNoBlank() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testIsCardValidShortBlank() {
+    Card myCard = Card("His name is __");
+    if(!myCard.IsValid())
+    {
+        return true;
+    }
     return false;
 }
 
@@ -103,6 +148,11 @@ bool CharsTester::testIsCardValidShortBlank() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testCorrectBlankLengthAndIndex() {
+    Card myCard = Card("His name is ____");
+    if(myCard.GetBlankLength() == 4 && myCard.GetBlankIndex() == 12)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -111,6 +161,12 @@ bool CharsTester::testCorrectBlankLengthAndIndex() {
  * @return pass: true, fail: false
  */
 bool CharsTester::testCardIsLessThan() {
+    Card myLongCard = Card("His name is ____ which is a really awful name.");
+    Card myShortCard = Card("I ____ it");
+    if(myShortCard < myLongCard)
+    {
+        return true;
+    }
     return false;
 }
 
