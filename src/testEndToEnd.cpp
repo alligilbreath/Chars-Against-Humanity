@@ -38,7 +38,7 @@ bool EndToEndTester::testFile(int testNum){
     
     // create file paths for inputCards, inputWords, output, and myOutput
     stringstream testCardsPath;
-    testCardsPath << TEST_FILE_RELATIVE_PATH << "/inputCards" << testNum + 1 << ".txt";
+    testCardsPath << TEST_FILE_RELATIVE_PATH << "/inputCards" << testNum << ".txt";
     
     ifstream testCardsFilePath;
     testCardsFilePath.open(testCardsPath.str());
@@ -49,7 +49,7 @@ bool EndToEndTester::testFile(int testNum){
     }
     
     stringstream testWordsPath;
-    testWordsPath << TEST_FILE_RELATIVE_PATH << "/inputWords" << testNum + 1 << ".txt";
+    testWordsPath << TEST_FILE_RELATIVE_PATH << "/inputWords" << testNum << ".txt";
     ifstream testWordsFilePath;
     testWordsFilePath.open(testWordsPath.str());
     if(!testWordsFilePath.is_open())
@@ -60,12 +60,12 @@ bool EndToEndTester::testFile(int testNum){
     
     //myOutput file path
     stringstream myOutputFilePath;
-    myOutputFilePath << TEST_FILE_RELATIVE_PATH << "/myOutput" << testNum + 1 << ".txt";
+    myOutputFilePath << TEST_FILE_RELATIVE_PATH << "/myOutput" << testNum << ".txt";
     
     
     //output file path
     stringstream outputPath;
-    outputPath << TEST_FILE_RELATIVE_PATH << "/output" << testNum + 1 << ".txt";
+    outputPath << TEST_FILE_RELATIVE_PATH << "/output" << testNum << ".txt";
     
     ifstream myOutputStream;
     myOutputStream.open(myOutputFilePath.str());
