@@ -1,0 +1,3 @@
+/Users/alligilbreath/Desktop/project6/project_6_example/bld/CMakeFiles/chars.dir
+/Users/alligilbreath/Desktop/project6/project_6_example/bld/CMakeFiles/ALL_BUILD.dir
+/Users/alligilbreath/Desktop/project6/project_6_example/bld/CMakeFiles/ZERO_CHECK.dir
