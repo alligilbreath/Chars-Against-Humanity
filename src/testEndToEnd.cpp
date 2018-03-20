@@ -36,15 +36,25 @@ bool EndToEndTester::testFile(int testNum){
     
     //check to see if any line is different
     
-    // create file paths for input, output, and myOutput
-    stringstream testInputPath;
-    testInputPath << TEST_FILE_RELATIVE_PATH << "/input" << testNum + 1 << ".txt";
+    // create file paths for inputCards, inputWords, output, and myOutput
+    stringstream testCardsPath;
+    testCardsPath << TEST_FILE_RELATIVE_PATH << "/inputCards" << testNum + 1 << ".txt";
     
-    ifstream testFilePath;
-    testFilePath.open(testInputPath.str());
-    if(!testFilePath.is_open())
+    ifstream testCardsFilePath;
+    testCardsFilePath.open(testCardsPath.str());
+    if(!testCardsFilePath.is_open())
     {
-        cout << "Could not open file: " << testInputPath.str() << endl;
+        cout << "Could not open file: " << testCardsPath.str() << endl;
+        return false;
+    }
+    
+    stringstream testWordsPath;
+    testWordsPath << TEST_FILE_RELATIVE_PATH << "/inputWords" << testNum + 1 << ".txt";
+    ifstream testWordsFilePath;
+    testWordsFilePath.open(testWordsPath.str());
+    if(!testWordsFilePath.is_open())
+    {
+        cout << "Could not open file: " << testWordsPath.str() << endl;
         return false;
     }
     
@@ -56,16 +66,6 @@ bool EndToEndTester::testFile(int testNum){
     //output file path
     stringstream outputPath;
     outputPath << TEST_FILE_RELATIVE_PATH << "/output" << testNum + 1 << ".txt";
-    
-//
-//    Chars chars(testInputPath.str(), testCardsPath.str(), myOutputFilePath.str());
-//    // Read Commands
-//    carSim.ReadCommandsFromFile();
-//    // run the commands
-//    carSim.RunAllCommands();
-//    // write to file
-//    carSim.WriteStateHistoryToFile();
-//
     
     ifstream myOutputStream;
     myOutputStream.open(myOutputFilePath.str());
@@ -83,9 +83,25 @@ bool EndToEndTester::testFile(int testNum){
         cout << "Could not open file: " << outputPath.str() << endl;
         return false;
     }
-    //compare it line-by-line with the output file provided to you.
+
+    // Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
+    Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
+    
+    // read cards from the file
+    // read words from the file
+    chars.ReadCardsFromFile();
+    chars.ReadWordsFromFile();
+    
+    // process the cards with the words
+    chars.ProcessCards();
+    
+    // write the cards to the file
+    chars.WriteCardsToFile();
+    
+    
     string currentMyOutput;
     string currentOutput;
+    //compare it line-by-line with the output file provided to you.
     while(!myOutputStream.eof())
     {
         getline(myOutputStream, currentMyOutput);
