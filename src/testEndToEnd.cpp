@@ -67,19 +67,21 @@ bool EndToEndTester::testFile(int testNum){
     stringstream outputPath;
     outputPath << TEST_FILE_RELATIVE_PATH << "/output" << testNum << ".txt";
     
-    Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
-    
     ifstream myOutputStream;
     myOutputStream.open(myOutputFilePath.str());
+    if(!myOutputStream.is_open())
+    {
+        cout << "Could not open file: " << myOutputFilePath.str() << endl;
+        return false;
+    }
+
+    
+    Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
+
     
     ifstream outputStream;
     outputStream.open(outputPath.str());
     
-//    if(!myOutputStream.is_open())
-//    {
-//        cout << "Could not open file: " << myOutputFilePath.str() << endl;
-//        return false;
-//    }
     if(!outputStream.is_open())
     {
         cout << "Could not open file: " << outputPath.str() << endl;
