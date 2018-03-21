@@ -67,17 +67,19 @@ bool EndToEndTester::testFile(int testNum){
     stringstream outputPath;
     outputPath << TEST_FILE_RELATIVE_PATH << "/output" << testNum << ".txt";
     
+    Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
+    
     ifstream myOutputStream;
     myOutputStream.open(myOutputFilePath.str());
     
     ifstream outputStream;
     outputStream.open(outputPath.str());
     
-    if(!myOutputStream.is_open())
-    {
-        cout << "Could not open file: " << myOutputFilePath.str() << endl;
-        return false;
-    }
+//    if(!myOutputStream.is_open())
+//    {
+//        cout << "Could not open file: " << myOutputFilePath.str() << endl;
+//        return false;
+//    }
     if(!outputStream.is_open())
     {
         cout << "Could not open file: " << outputPath.str() << endl;
@@ -85,7 +87,7 @@ bool EndToEndTester::testFile(int testNum){
     }
 
     // Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
-    Chars chars(testWordsPath.str(), testCardsPath.str(), myOutputFilePath.str());
+   
     
     // read cards from the file
     // read words from the file
