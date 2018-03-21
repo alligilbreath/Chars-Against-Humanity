@@ -110,8 +110,8 @@ bool EndToEndTester::testFile(int testNum){
         
         getline(outputStream, currentOutput);
         
-        //cout << "Current myOutput line: " << currentMyOutput << "\n";
-        //cout << "Current output line: " << currentOutput << "\n";
+        cout << "Current myOutput line: " << currentMyOutput << "\n";
+        cout << "Current output line: " << currentOutput << "\n";
         if(currentMyOutput.compare(currentOutput) != 0)
         {
             myOutputStream.close();
@@ -120,12 +120,12 @@ bool EndToEndTester::testFile(int testNum){
         }
     }
     //to check if myOutputStream reached end of file before outputStream
-    if(myOutputStream.eof() != outputStream.eof())
-    {
-        myOutputStream.close();
-        outputStream.close();
-        return false;
-    }
+//    if(myOutputStream.eof() != outputStream.eof())
+//    {
+//        myOutputStream.close();
+//        outputStream.close();
+//        return false;
+//    }
     
     myOutputStream.close();
     outputStream.close();
