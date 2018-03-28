@@ -23,7 +23,7 @@ Word::Word(string lineFromFile){
     string newLine;
     for(unsigned int i = 0; i < lineFromFile.length() - 1; i++)
     {
-        if(lineFromFile.substr(i, i + 1) == "/r" && lineFromFile.substr(i, i + 1) != "\n")
+        if(lineFromFile.substr(i, i + 1) != "/r" && lineFromFile.substr(i, i + 1) != "\n")
         {
             newLine[i] = lineFromFile[i];
         }
