@@ -35,6 +35,7 @@ Word::Word(string lineFromFile){
         {
             cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
             newLine[i] = lineFromFile[i];
+            cout << "New Line [i] is: " << newLine[i] << endl;
         }
     }
     cout << "New line is: " << newLine << endl;
