@@ -37,7 +37,8 @@ Word::Word(string lineFromFile){
             newLine[i] = lineFromFile[i];
         }
     }
-    _content = lineFromFile;
+    cout << "New line is: " << newLine << endl;
+    _content = newLine;
 }
 
 /**
@@ -58,6 +59,7 @@ bool Word::IsValid(){
    }
     for(unsigned int i = 0; i < _content.length(); i++)
     {
+        cout << "Content i is: " << _content[i] << endl;
         if(!ispunct(_content[i]) || !isalnum(_content[i]))
         {
             return false;
