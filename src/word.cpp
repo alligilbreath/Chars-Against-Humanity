@@ -22,14 +22,15 @@ using namespace std;
  */
 Word::Word(string lineFromFile){
     string newLine;
-    unsigned int locationOfR = lineFromFile.find("\r");
-    cout << "LocationOfR: " << locationOfR << endl;
-    unsigned int locationOfN = lineFromFile.find("\n");
-    cout << "LocationOfN: " << locationOfN << endl;
+//    unsigned int locationOfR = lineFromFile.find("\r");
+//    cout << "LocationOfR: " << locationOfR << endl;
+//    unsigned int locationOfN = lineFromFile.find("\n");
+//    cout << "LocationOfN: " << locationOfN << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
         cout << "i is: " << i << endl;
-        if(i != locationOfN && i != locationOfR)
+       // if(i != locationOfN && i != locationOfR)
+        if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]))
         {
             cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
             newLine[i] = lineFromFile[i];
@@ -50,5 +51,16 @@ Word::Word(string lineFromFile){
  * @return 1 if valid, 0 otherwise
  */
 bool Word::IsValid(){
-    return false;
+   if(_content.length() < 2)
+   {
+       return false;
+   }
+    for(int i = 0; i < _content.length(); i++)
+    {
+        if(!ispunct(_content[i]) || !isalnum(_content[i]))
+        {
+            return false;
+        }
+    }
+    return true;
 }
