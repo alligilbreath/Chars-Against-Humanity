@@ -19,7 +19,12 @@ using namespace std;
  *
  */
 Word::Word(string lineFromFile){
-
+    string chars = "\r\n";
+    for (unsigned int i = 0; i < chars.length(); ++i)
+    {
+        lineFromFile.erase(remove(lineFromFile.begin(), lineFromFile.end(), chars[i]), lineFromFile.end());
+    }
+    _content = lineFromFile;
 }
 
 /**
