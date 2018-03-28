@@ -26,6 +26,7 @@ Word::Word(string lineFromFile){
 //    cout << "LocationOfR: " << locationOfR << endl;
 //    unsigned int locationOfN = lineFromFile.find("\n");
 //    cout << "LocationOfN: " << locationOfN << endl;
+    cout << "Entire line is: " << lineFromFile << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
         cout << "i is: " << i << endl;
