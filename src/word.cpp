@@ -28,9 +28,10 @@ Word::Word(string lineFromFile){
     cout << "LocationOfN: " << locationOfN << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
+        cout << "i is: " << i << endl;
         if(i != locationOfN && i != locationOfR)
         {
-            cout << "newLine[i] is " << newLine[i] << endl;
+            cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
             newLine[i] = lineFromFile[i];
         }
     }
