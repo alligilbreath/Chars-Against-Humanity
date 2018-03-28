@@ -22,10 +22,10 @@ using namespace std;
  */
 Word::Word(string lineFromFile){
     string newLine;
-    for(unsigned int i = 0; i < lineFromFile.length() - 1; i++)
+    for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
-        cout << "Current letter: " << lineFromFile.substr(i, i + 1) << endl;
-        if(lineFromFile.substr(i, i + 1) != "/r" && lineFromFile.substr(i, i + 1) != "\n")
+        cout << "Current letter: " << lineFromFile.substr(i, i) << endl;
+        if(lineFromFile.substr(i, i) != "/r" && lineFromFile.substr(i, i) != "\n")
         {
             newLine[i] = lineFromFile[i];
         }
