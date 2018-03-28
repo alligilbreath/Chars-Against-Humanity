@@ -36,6 +36,7 @@ Word::Word(string lineFromFile){
         }
     }
   //  cout << "New line is: " << newLine << endl;
+    cout << "New Line is " << newLine << endl;
     _content = newLine;
 }
 
