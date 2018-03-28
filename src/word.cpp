@@ -22,11 +22,15 @@ using namespace std;
  */
 Word::Word(string lineFromFile){
     string newLine;
+    unsigned int locationOfR = lineFromFile.find("\r");
+    cout << "LocationOfR: " << locationOfR << endl;
+    unsigned int locationOfN = lineFromFile.find("\n");
+    cout << "LocationOfN: " << locationOfN << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
-        cout << "Current letter: " << lineFromFile.substr(i, i) << endl;
-        if(lineFromFile.substr(i, i) != "/r" && lineFromFile.substr(i, i) != "\n")
+        if(i != locationOfN && i != locationOfR)
         {
+            cout << "newLine[i] is " << newLine[i] << endl;
             newLine[i] = lineFromFile[i];
         }
     }
