@@ -22,25 +22,20 @@ using namespace std;
  */
 Word::Word(string lineFromFile){
     std::string newLine;
-//    unsigned int locationOfR = lineFromFile.find("\r");
-//    cout << "LocationOfR: " << locationOfR << endl;
-//    unsigned int locationOfN = lineFromFile.find("\n");
-//    cout << "LocationOfN: " << locationOfN << endl;
-    cout << "Entire line is: " << lineFromFile << endl;
+ //   cout << "Entire line is: " << lineFromFile << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
-        cout << "i is: " << i << endl;
-       // if(i != locationOfN && i != locationOfR)
+  //      cout << "i is: " << i << endl;
         if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]))
         {
-            cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
+   //         cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
             newLine[i] = lineFromFile[i];
             newLine += lineFromFile[i];
-            cout << "New Line [i] is: " << newLine[i] << endl;
-            cout << "New line total is: " << newLine << endl;
+   //         cout << "New Line [i] is: " << newLine[i] << endl;
+    //        cout << "New line total is: " << newLine << endl;
         }
     }
-    cout << "New line is: " << newLine << endl;
+  //  cout << "New line is: " << newLine << endl;
     _content = newLine;
 }
 
@@ -56,6 +51,7 @@ Word::Word(string lineFromFile){
  * @return 1 if valid, 0 otherwise
  */
 bool Word::IsValid(){
+    cout << _content << endl;
    if(_content.length() < 2)
    {
        return false;
@@ -63,8 +59,9 @@ bool Word::IsValid(){
     for(unsigned int i = 0; i < _content.length(); i++)
     {
         cout << "Content i is: " << _content[i] << endl;
-        if(!ispunct(_content[i]) || !isalnum(_content[i]))
+        if(ispunct(_content[i]) == 0 && isalnum(_content[i]) == 0)
         {
+            cout << "Content i in if is: " << _content[i] << endl;
             return false;
         }
     }
