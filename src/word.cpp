@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------//
 
 #include "word.h"
-#include <algorithm>
+//#include <algorithm>
 
 using namespace std;
 
@@ -20,14 +20,14 @@ using namespace std;
  *
  */
 Word::Word(string lineFromFile){
-    char chars[] = "\r\n";
-    
-    for (unsigned int i = 0; i < strlen(chars); ++i)
+    string newLine;
+    for(int i = 0; i < lineFromFile.length(); i++)
     {
-        // you need include <algorithm> to use general algorithms like std::remove()
-        lineFromFile.erase (std::remove(lineFromFile.begin(), lineFromFile.end(), chars[i]), lineFromFile.end());
+        if(lineFromFile[i] != '/r' && lineFromFile[i] != '\n')
+        {
+            newLine[i] = lineFromFile[i];
+        }
     }
-
     _content = lineFromFile;
 }
 
