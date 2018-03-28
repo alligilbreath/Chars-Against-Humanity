@@ -21,7 +21,7 @@ using namespace std;
  *
  */
 Word::Word(string lineFromFile){
-    string newLine;
+    std::string newLine;
 //    unsigned int locationOfR = lineFromFile.find("\r");
 //    cout << "LocationOfR: " << locationOfR << endl;
 //    unsigned int locationOfN = lineFromFile.find("\n");
@@ -35,6 +35,7 @@ Word::Word(string lineFromFile){
         {
             cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
             newLine[i] = lineFromFile[i];
+            newLine += lineFromFile[i];
             cout << "New Line [i] is: " << newLine[i] << endl;
             cout << "New line total is: " << newLine << endl;
         }
