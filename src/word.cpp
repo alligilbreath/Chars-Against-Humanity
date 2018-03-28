@@ -27,17 +27,13 @@ Word::Word(string lineFromFile){
     {
       cout << "i is: " << i << endl;
                 cout << "lineFromFile[i] is " << lineFromFile[i] << endl;
-        if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]))
+        if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]) || lineFromFile[i] == ' ')
         {
 
             newLine[i] = lineFromFile[i];
             newLine += lineFromFile[i];
    //         cout << "New Line [i] is: " << newLine[i] << endl;
     //        cout << "New line total is: " << newLine << endl;
-        }
-        if(lineFromFile[i] == ' ')
-        {
-            break;
         }
     }
   //  cout << "New line is: " << newLine << endl;
