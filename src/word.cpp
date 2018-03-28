@@ -55,7 +55,7 @@ bool Word::IsValid(){
    {
        return false;
    }
-    for(int i = 0; i < _content.length(); i++)
+    for(unsigned int i = 0; i < _content.length(); i++)
     {
         if(!ispunct(_content[i]) || !isalnum(_content[i]))
         {
