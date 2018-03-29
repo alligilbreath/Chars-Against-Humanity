@@ -47,17 +47,17 @@ Word::Word(string lineFromFile){
  * @return 1 if valid, 0 otherwise
  */
 bool Word::IsValid(){
-    cout << _content << endl;
+    //cout << _content << endl;
    if(_content.length() < 2)
    {
        return false;
    }
     for(unsigned int i = 0; i < _content.length(); i++)
     {
-        cout << "Content i is: " << _content[i] << endl;
+        //cout << "Content i is: " << _content[i] << endl;
         if(ispunct(_content[i]) == 0 && isalnum(_content[i]) == 0)
         {
-            cout << "Content i in if is: " << _content[i] << endl;
+            //cout << "Content i in if is: " << _content[i] << endl;
             return false;
         }
     }
