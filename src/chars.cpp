@@ -122,6 +122,28 @@ void Chars::ReadWordsFromFile() {
  *
  */
 void Chars::ProcessCards() {
+    //Card currentCard;
+    unsigned int currBlankLength = 0;
+    bool insertedWord = false;
+    std::list<Card>::iterator card = _cards.begin();// Create an iterator object
+    while(card != _cards.end()){ // keep iterating until we hit the end
+        currBlankLength = (*card).GetBlankLength();
+        for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
+            if((*word).GetContent().length() == currBlankLength)
+            {
+                (*card).ReplaceBlanks(*word);
+                _words.erase(word);
+                insertedWord = true;
+            }
+        }
+        //currentCard.GetBlankLength();
+        if(insertedWord == false)
+        {
+            _cards.erase(card);
+        }
+        insertedWord = false;
+        card++;
+    }
 
 }
 

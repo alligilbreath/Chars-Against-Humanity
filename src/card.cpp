@@ -33,7 +33,7 @@ Card::Card(string lineFromFile){
             newLine += lineFromFile[i];
         }
     }
-    cout << "New Line Card is " << newLine << endl;
+    //cout << "New Line Card is " << newLine << endl;
     for(unsigned int i = 0; i < newLine.length(); i++)
     {
         if(newLine[i] == '_')
@@ -62,12 +62,12 @@ void Card::ReplaceBlanks(Word word){
     {
         if(i >= _blankIndex && i <= _blankIndex + _blankLength)
         {
-            cout << "Word letter is: " << word.GetContent()[i] << endl;
+           // cout << "Word letter is: " << word.GetContent()[i] << endl;
             newLine += word.GetContent()[i];
         }
         else
         {
-            cout << "Content letter is: " << _content[i] << endl;
+         //   cout << "Content letter is: " << _content[i] << endl;
             newLine += _content[i];
         }
     }
