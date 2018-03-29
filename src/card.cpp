@@ -34,7 +34,7 @@ Card::Card(string lineFromFile){
             newLine += lineFromFile[i];
         }
     }
-   // cout << "New Line Card is " << newLine << endl;
+    //cout << "New Line Card is " << newLine << endl;
     for(unsigned int i = 0; i < newLine.length(); i++)
     {
         //cout << "New Line length is: " << newLine.length() << endl;
@@ -51,6 +51,8 @@ Card::Card(string lineFromFile){
             _blankLength++;
         }
     }
+    //cout << "Blank index is " << _blankIndex << endl;
+    //cout << "Blank length is " << _blankLength << endl;
     _content = newLine;
 }
 
@@ -64,12 +66,13 @@ Card::Card(string lineFromFile){
  */
 void Card::ReplaceBlanks(Word word){
     string newLine;
+    cout << "Card content is: " << _content << endl;
     cout << "Word is: " << word.GetContent() << endl;
     cout << "Blank index is " << _blankIndex << endl;
     int wordIndex = 0;
     for(unsigned int i = 0; i < _content.length(); i++)
     {
-        if(i >= _blankIndex && i <= _blankIndex + _blankLength)
+        if(i >= _blankIndex && i <= _blankIndex + _blankLength - 1)
         {
             cout << "entered this if statement" << endl;
             cout << "Word letter is: " << word.GetContent()[wordIndex] << endl;

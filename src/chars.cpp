@@ -129,7 +129,9 @@ void Chars::ProcessCards() {
     while(card != _cards.end()){ // keep iterating until we hit the end
         currBlankLength = (*card).GetBlankLength();
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
-            if((*word).GetContent().length() == currBlankLength)
+          //  cout << "Word length is: " << (*word).GetContent().length() << endl;
+           // cout << "Blank length is: "<< currBlankLength << endl;
+            if((*word).GetContent().length() == currBlankLength && insertedWord == false)
             {
                 (*card).ReplaceBlanks(*word);
                 _words.erase(word);
