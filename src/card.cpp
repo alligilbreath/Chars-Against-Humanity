@@ -26,8 +26,8 @@ Card::Card(string lineFromFile){
     std::string newLine;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
-        cout << "i is: " << i << endl;
-        cout << "lineFromFileCard[i] is " << lineFromFile[i] << endl;
+      //  cout << "i is: " << i << endl;
+      //  cout << "lineFromFileCard[i] is " << lineFromFile[i] << endl;
         if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]) || lineFromFile[i] == ' ')
         {
             newLine += lineFromFile[i];
