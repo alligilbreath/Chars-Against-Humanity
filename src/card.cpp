@@ -97,7 +97,7 @@ void Card::ReplaceBlanks(Word word){
  *
  */
 bool Card::IsValid() {
-    if(_blankLength <= 3)
+    if(_blankLength < 3)
     {
         return false;
     }
