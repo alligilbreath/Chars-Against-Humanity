@@ -24,6 +24,7 @@ using namespace std;
  */
 Card::Card(string lineFromFile){
     std::string newLine;
+   // cout << "Blank length is " << _blankLength << endl;
     for(unsigned int i = 0; i < lineFromFile.length(); i++)
     {
       //  cout << "i is: " << i << endl;
@@ -33,14 +34,19 @@ Card::Card(string lineFromFile){
             newLine += lineFromFile[i];
         }
     }
-    //cout << "New Line Card is " << newLine << endl;
+   // cout << "New Line Card is " << newLine << endl;
     for(unsigned int i = 0; i < newLine.length(); i++)
     {
+        //cout << "New Line length is: " << newLine.length() << endl;
+       // cout << "newLine[i]: " << newLine[i] << endl;
         if(newLine[i] == '_')
         {
+            //cout << "Entered this if statement " << endl;
             if(_blankLength == 0)
             {
+               // cout << "Entered this second if statement" << endl;
                  _blankIndex = i;
+                //cout << "Blank index is: " << _blankIndex << endl;
             }
             _blankLength++;
         }
@@ -58,12 +64,17 @@ Card::Card(string lineFromFile){
  */
 void Card::ReplaceBlanks(Word word){
     string newLine;
+    cout << "Word is: " << word.GetContent() << endl;
+    cout << "Blank index is " << _blankIndex << endl;
+    int wordIndex = 0;
     for(unsigned int i = 0; i < _content.length(); i++)
     {
         if(i >= _blankIndex && i <= _blankIndex + _blankLength)
         {
-           // cout << "Word letter is: " << word.GetContent()[i] << endl;
-            newLine += word.GetContent()[i];
+            cout << "entered this if statement" << endl;
+            cout << "Word letter is: " << word.GetContent()[wordIndex] << endl;
+            newLine += word.GetContent()[wordIndex];
+            wordIndex++;
         }
         else
         {
@@ -71,6 +82,7 @@ void Card::ReplaceBlanks(Word word){
             newLine += _content[i];
         }
     }
+   // cout << "New line with replaced blank is " << newLine << endl;
     _content = newLine;
     
 }

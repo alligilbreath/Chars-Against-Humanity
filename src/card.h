@@ -15,7 +15,7 @@ class Card{
 private:
     std::string _content;
     unsigned int _blankIndex;
-    unsigned int _blankLength;
+    unsigned int _blankLength = 0;
 public:
     Card();
     Card(std::string lineFromFile);

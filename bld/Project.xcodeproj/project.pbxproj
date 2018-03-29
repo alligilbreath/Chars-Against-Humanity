@@ -34,50 +34,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0719069CE1EB4442BEDD45B3 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.h */ = {isa = PBXBuildFile; fileRef = D8519066FD5C48A1913CEC04 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.h */; };
-		0BD49907D60A4C819B53C199 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.cpp */ = {isa = PBXBuildFile; fileRef = 40CCE1C91E624685A3F0E6C5 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.cpp */; };
-		36169233166E4E4AB9C85772 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.h */ = {isa = PBXBuildFile; fileRef = E586E30FE2AF47D3AE1DDE8A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.h */; };
-		38B42E4AAA3F4C7A9C526DD8 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.h */ = {isa = PBXBuildFile; fileRef = D35FE1EDC57C4285A2EE874F /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.h */; };
-		4B4695C7A696427A94013C73 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/main.cpp */ = {isa = PBXBuildFile; fileRef = A038B0BED1E74861A633D2AC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/main.cpp */; };
-		5FE75FE39EC54D5FBA2525D1 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.cpp */ = {isa = PBXBuildFile; fileRef = 65CFB8B5A10F4A7F90DD6C6C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.cpp */; };
-		6F346A8BA3944B9BB7C5E166 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.h */ = {isa = PBXBuildFile; fileRef = A3036EB512AA43BDA1421278 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.h */; };
-		9F2347672E3C4DEF994C52BE /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.cpp */ = {isa = PBXBuildFile; fileRef = 3A0F77ACC8CC4B3F8B24DE47 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.cpp */; };
-		C617BCCC9ECF44FAB0A6E487 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.cpp */ = {isa = PBXBuildFile; fileRef = 9F38759614BC4D998D33D08C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.cpp */; };
-		CC40A3C75F3847A9BB9182F0 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E50397E7CDF647D6AD9C8EAC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */; };
-		DA7BCE9150394F8C8B77A0F2 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.h */ = {isa = PBXBuildFile; fileRef = 80BD0F4A5A444B56AC9D56AB /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.h */; };
-		F84F323544B046E09DBC3429 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.cpp */ = {isa = PBXBuildFile; fileRef = 6B7F385F274D40959ECD292A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.cpp */; };
+		0BD49907D60A4C819B53C199 /* testEndToEnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CCE1C91E624685A3F0E6C5 /* testEndToEnd.cpp */; };
+		4B4695C7A696427A94013C73 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A038B0BED1E74861A633D2AC /* main.cpp */; };
+		5FE75FE39EC54D5FBA2525D1 /* testChars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65CFB8B5A10F4A7F90DD6C6C /* testChars.cpp */; };
+		9F2347672E3C4DEF994C52BE /* word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F77ACC8CC4B3F8B24DE47 /* word.cpp */; };
+		C617BCCC9ECF44FAB0A6E487 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F38759614BC4D998D33D08C /* card.cpp */; };
+		F84F323544B046E09DBC3429 /* chars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F385F274D40959ECD292A /* chars.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		0531415FA3EF45CBB8C2D08B /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		0717A88D5514438F92C93902 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		242B0693138F451F9DB6BB43 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		CAFD7CABD9F644209168D5CB /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		3D6C19FDED9F48EE98C1C0D3 /* PBXContainerItemProxy */ = {
@@ -104,21 +67,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E87B38F404F4FBC8D2E189E /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		3A0F77ACC8CC4B3F8B24DE47 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = word.cpp; path = word.cpp; sourceTree = SOURCE_ROOT; };
-		40CCE1C91E624685A3F0E6C5 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testEndToEnd.cpp; path = testEndToEnd.cpp; sourceTree = SOURCE_ROOT; };
-		65CFB8B5A10F4A7F90DD6C6C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testChars.cpp; path = testChars.cpp; sourceTree = SOURCE_ROOT; };
-		6B7F385F274D40959ECD292A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chars.cpp; path = chars.cpp; sourceTree = SOURCE_ROOT; };
-		80BD0F4A5A444B56AC9D56AB /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = testEndToEnd.h; path = testEndToEnd.h; sourceTree = SOURCE_ROOT; };
-		856097A9047C496E89FF8C31 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		9F38759614BC4D998D33D08C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = card.cpp; path = card.cpp; sourceTree = SOURCE_ROOT; };
-		A038B0BED1E74861A633D2AC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		A3036EB512AA43BDA1421278 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = testChars.h; path = testChars.h; sourceTree = SOURCE_ROOT; };
-		D35FE1EDC57C4285A2EE874F /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = card.h; path = card.h; sourceTree = SOURCE_ROOT; };
-		D8519066FD5C48A1913CEC04 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chars.h; path = chars.h; sourceTree = SOURCE_ROOT; };
+		1E87B38F404F4FBC8D2E189E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3A0F77ACC8CC4B3F8B24DE47 /* word.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = word.cpp; sourceTree = SOURCE_ROOT; };
+		40CCE1C91E624685A3F0E6C5 /* testEndToEnd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = testEndToEnd.cpp; sourceTree = SOURCE_ROOT; };
+		65CFB8B5A10F4A7F90DD6C6C /* testChars.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = testChars.cpp; sourceTree = SOURCE_ROOT; };
+		6B7F385F274D40959ECD292A /* chars.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = chars.cpp; sourceTree = SOURCE_ROOT; };
+		80BD0F4A5A444B56AC9D56AB /* testEndToEnd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = testEndToEnd.h; sourceTree = SOURCE_ROOT; };
+		856097A9047C496E89FF8C31 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9F38759614BC4D998D33D08C /* card.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = card.cpp; sourceTree = SOURCE_ROOT; };
+		A038B0BED1E74861A633D2AC /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		A3036EB512AA43BDA1421278 /* testChars.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = testChars.h; sourceTree = SOURCE_ROOT; };
+		D35FE1EDC57C4285A2EE874F /* card.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = card.h; sourceTree = SOURCE_ROOT; };
+		D8519066FD5C48A1913CEC04 /* chars.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = chars.h; sourceTree = SOURCE_ROOT; };
 		DE32BEB7347F476A9DEDD9A6 /* chars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = chars; sourceTree = BUILT_PRODUCTS_DIR; };
-		E50397E7CDF647D6AD9C8EAC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		E586E30FE2AF47D3AE1DDE8A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = word.h; path = word.h; sourceTree = SOURCE_ROOT; };
+		E50397E7CDF647D6AD9C8EAC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E586E30FE2AF47D3AE1DDE8A /* word.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = word.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -126,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B14A572EE0B9417CB06D74B6 /* CMake Rules */,
-				856097A9047C496E89FF8C31 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */,
+				856097A9047C496E89FF8C31 /* CMakeLists.txt */,
 			);
 			name = ZERO_CHECK;
 			sourceTree = "<group>";
@@ -135,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC33A3B833D4806968A2E10 /* CMake Rules */,
-				1E87B38F404F4FBC8D2E189E /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */,
+				1E87B38F404F4FBC8D2E189E /* CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
@@ -145,7 +108,7 @@
 			children = (
 				A4B205A084D741DA957BC982 /* Source Files */,
 				C9A508EB43054A6CB189D385 /* Header Files */,
-				E50397E7CDF647D6AD9C8EAC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/CMakeLists.txt */,
+				E50397E7CDF647D6AD9C8EAC /* CMakeLists.txt */,
 			);
 			name = chars;
 			sourceTree = "<group>";
@@ -161,12 +124,12 @@
 		A4B205A084D741DA957BC982 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F38759614BC4D998D33D08C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.cpp */,
-				6B7F385F274D40959ECD292A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.cpp */,
-				A038B0BED1E74861A633D2AC /* /Users/alligilbreath/Desktop/project6/project_6_example/src/main.cpp */,
-				65CFB8B5A10F4A7F90DD6C6C /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.cpp */,
-				40CCE1C91E624685A3F0E6C5 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.cpp */,
-				3A0F77ACC8CC4B3F8B24DE47 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.cpp */,
+				A038B0BED1E74861A633D2AC /* main.cpp */,
+				9F38759614BC4D998D33D08C /* card.cpp */,
+				6B7F385F274D40959ECD292A /* chars.cpp */,
+				65CFB8B5A10F4A7F90DD6C6C /* testChars.cpp */,
+				40CCE1C91E624685A3F0E6C5 /* testEndToEnd.cpp */,
+				3A0F77ACC8CC4B3F8B24DE47 /* word.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -188,11 +151,11 @@
 		C9A508EB43054A6CB189D385 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35FE1EDC57C4285A2EE874F /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.h */,
-				D8519066FD5C48A1913CEC04 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.h */,
-				A3036EB512AA43BDA1421278 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.h */,
-				80BD0F4A5A444B56AC9D56AB /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.h */,
-				E586E30FE2AF47D3AE1DDE8A /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.h */,
+				D35FE1EDC57C4285A2EE874F /* card.h */,
+				D8519066FD5C48A1913CEC04 /* chars.h */,
+				A3036EB512AA43BDA1421278 /* testChars.h */,
+				80BD0F4A5A444B56AC9D56AB /* testEndToEnd.h */,
+				E586E30FE2AF47D3AE1DDE8A /* word.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -236,16 +199,12 @@
 				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = D77DA17BFEF343CE9954CF41 /* Build configuration list for PBXProject "Project" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				0531415FA3EF45CBB8C2D08B /* Debug */,
-				242B0693138F451F9DB6BB43 /* Release */,
-				CAFD7CABD9F644209168D5CB /* MinSizeRel */,
-				0717A88D5514438F92C93902 /* RelWithDebInfo */,
-			);
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = E591EA0BEC6F4331A608313F;
 			projectDirPath = /Users/alligilbreath/Desktop/project6/project_6_example/src;
 			projectRoot = "";
@@ -258,36 +217,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F40E0A909EC4764B5C52F7A = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		911E6A1353D347FD97C07A03 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
 		D13B5F1B98ED4698B0549B2A /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,12 +246,12 @@ exit 0";
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C617BCCC9ECF44FAB0A6E487 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/card.cpp */,
-				F84F323544B046E09DBC3429 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/chars.cpp */,
-				4B4695C7A696427A94013C73 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/main.cpp */,
-				5FE75FE39EC54D5FBA2525D1 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testChars.cpp */,
-				0BD49907D60A4C819B53C199 /* /Users/alligilbreath/Desktop/project6/project_6_example/src/testEndToEnd.cpp */,
-				9F2347672E3C4DEF994C52BE /* /Users/alligilbreath/Desktop/project6/project_6_example/src/word.cpp */,
+				C617BCCC9ECF44FAB0A6E487 /* card.cpp in Sources */,
+				F84F323544B046E09DBC3429 /* chars.cpp in Sources */,
+				4B4695C7A696427A94013C73 /* main.cpp in Sources */,
+				5FE75FE39EC54D5FBA2525D1 /* testChars.cpp in Sources */,
+				0BD49907D60A4C819B53C199 /* testEndToEnd.cpp in Sources */,
+				9F2347672E3C4DEF994C52BE /* word.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +283,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -363,7 +292,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -374,7 +308,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -383,7 +317,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -394,7 +333,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -403,7 +342,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -414,7 +358,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -423,7 +367,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -454,18 +403,31 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++11        -DNDEBUG   -Wall -g";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+					"-Wall",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = chars;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -476,7 +438,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -485,7 +447,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -496,7 +463,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -505,7 +472,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
@@ -527,18 +499,31 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++11     -DNDEBUG   -Wall -g";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+					"-Wall",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = chars;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -549,7 +534,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -558,7 +543,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
@@ -569,7 +559,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -578,7 +568,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -600,18 +595,30 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++11      -Wall -g";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-Wall",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = chars;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -624,18 +631,31 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++11     -DNDEBUG   -Wall -g";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+					"-Wall",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = chars;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/alligilbreath/Desktop/project6/project_6_example/bld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};

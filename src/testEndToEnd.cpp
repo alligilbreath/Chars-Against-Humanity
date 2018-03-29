@@ -112,8 +112,8 @@ bool EndToEndTester::testFile(int testNum){
         
         getline(outputStream, currentOutput);
         
-        cout << "Current myOutput line: " << currentMyOutput << "\n";
-        cout << "Current output line: " << currentOutput << "\n";
+        //cout << "Current myOutput line: " << currentMyOutput << "\n";
+        //cout << "Current output line: " << currentOutput << "\n";
         if(currentMyOutput.compare(currentOutput) != 0)
         {
             myOutputStream.close();
