@@ -164,7 +164,7 @@ void Chars::WriteCardsToFile() {
         cout << "Could not open " << _outputFilePath << endl;
     }
     //first sort all of the cards
-   // std::sort(_cards.begin(), _cards.end());
+    _cards.sort();
     //then output to file
     std::list<Card>::iterator card = _cards.begin();// Create an iterator object
     while(card != _cards.end()){ // keep iterating until we hit the end
