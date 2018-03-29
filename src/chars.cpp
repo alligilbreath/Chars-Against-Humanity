@@ -81,7 +81,31 @@ void Chars::ReadCardsFromFile() {
  *
  */
 void Chars::ReadWordsFromFile() {
+    ifstream myWordsFile;
+    myWordsFile.open(_wordFilePath);
+    //Command currentCommand;
+    std::string currentLine;
+    //Card currentCard;
     
+    if(!myWordsFile.is_open())
+    {
+        cout << _wordFilePath << "could not be opened." << endl;
+        return;
+    }
+    while(!myWordsFile.eof())
+    {
+        getline(myWordsFile, currentLine);
+        cout << "Current line is: " << currentLine << endl;
+        Word currentWord(currentLine);
+        if(currentWord.IsValid())
+        {
+            _words.push_back(currentWord);
+        }
+        
+    }
+    
+    myWordsFile.close();
+    return;
 }
 
 /**
