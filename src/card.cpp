@@ -57,7 +57,22 @@ Card::Card(string lineFromFile){
  *
  */
 void Card::ReplaceBlanks(Word word){
-
+    string newLine;
+    for(unsigned int i = 0; i < _content.length(); i++)
+    {
+        if(i >= _blankIndex && i <= _blankIndex + _blankLength)
+        {
+            cout << "Word letter is: " << word.GetContent()[i] << endl;
+            newLine += word.GetContent()[i];
+        }
+        else
+        {
+            cout << "Content letter is: " << _content[i] << endl;
+            newLine += _content[i];
+        }
+    }
+    _content = newLine;
+    
 }
 
 /**
