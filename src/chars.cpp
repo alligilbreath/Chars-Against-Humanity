@@ -45,7 +45,7 @@ void Chars::ReadCardsFromFile() {
     myCardsFile.open(_cardFilePath);
     //Command currentCommand;
     std::string currentLine;
-    Card currentCard;
+    //Card currentCard;
     
     if(!myCardsFile.is_open())
     {
@@ -56,7 +56,7 @@ void Chars::ReadCardsFromFile() {
     {
         getline(myCardsFile, currentLine);
         cout << "Current line is: " << currentLine << endl;
-        currentCard = Card(currentLine);
+        Card currentCard(currentLine);
         if(currentCard.IsValid())
             {
                 _cards.push_back(currentCard);
