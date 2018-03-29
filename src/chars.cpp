@@ -23,6 +23,9 @@ using namespace std;
  * @requirement assign parameters to Chars data members of similar name
  */
 Chars::Chars(std::string wordsFilePath, std::string cardsFilePath, std::string outputFilePath){
+    _wordFilePath = wordsFilePath;
+    _cardFilePath = cardsFilePath;
+    _outputFilePath = outputFilePath;
 
 }
 
@@ -30,7 +33,7 @@ Chars::Chars(std::string wordsFilePath, std::string cardsFilePath, std::string o
 * Description: Read Cards from a File
 *
 *
-* @requirement output error if _cardsFilePath cannot be opened
+* @requirement output error if _cardFilePath cannot be opened
 * @requirement populate _cards list in the order they are found in the file
 * @requirement Every line in the _cardsFilePath is used to create a new Card object using the Card constructor
 * @requirement A Card is added to the _cards list only if the Card is valid
@@ -38,6 +41,31 @@ Chars::Chars(std::string wordsFilePath, std::string cardsFilePath, std::string o
 *
 */
 void Chars::ReadCardsFromFile() {
+    ifstream myCardsFile;
+    myCardsFile.open(_cardFilePath);
+    //Command currentCommand;
+    std::string currentLine;
+    Card currentCard;
+    
+    if(!myCardsFile.is_open())
+    {
+        cout << _cardFilePath << "could not be opened." << endl;
+        return;
+    }
+    while(!myCardsFile.eof())
+    {
+        getline(myCardsFile, currentLine);
+        cout << "Current line is: " << currentLine << endl;
+        currentCard = Card(currentLine);
+        if(currentCard.IsValid())
+            {
+                _cards.push_back(currentCard);
+            }
+        
+    }
+    
+    myCardsFile.close();
+    return;
     
 }
 
