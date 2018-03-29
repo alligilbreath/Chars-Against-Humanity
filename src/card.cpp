@@ -23,7 +23,24 @@ using namespace std;
  *
  */
 Card::Card(string lineFromFile){
-
+    std::string newLine;
+    //   cout << "Entire line is: " << lineFromFile << endl;
+    for(unsigned int i = 0; i < lineFromFile.length(); i++)
+    {
+        cout << "i is: " << i << endl;
+        cout << "lineFromFileCard[i] is " << lineFromFile[i] << endl;
+        if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]) || lineFromFile[i] == ' ')
+        {
+            
+           // newLine[i] = lineFromFile[i];
+            newLine += lineFromFile[i];
+            //         cout << "New Line [i] is: " << newLine[i] << endl;
+            //        cout << "New line total is: " << newLine << endl;
+        }
+    }
+    //  cout << "New line is: " << newLine << endl;
+    cout << "New Line Card is " << newLine << endl;
+    _content = newLine;
 }
 
 /**

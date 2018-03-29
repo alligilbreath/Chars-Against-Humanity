@@ -30,7 +30,7 @@ Word::Word(string lineFromFile){
         if(ispunct(lineFromFile[i]) || isalnum(lineFromFile[i]) || lineFromFile[i] == ' ')
         {
 
-            newLine[i] = lineFromFile[i];
+           // newLine[i] = lineFromFile[i];
             newLine += lineFromFile[i];
    //         cout << "New Line [i] is: " << newLine[i] << endl;
     //        cout << "New line total is: " << newLine << endl;
