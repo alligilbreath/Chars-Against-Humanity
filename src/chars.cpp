@@ -42,6 +42,7 @@ Chars::Chars(std::string wordsFilePath, std::string cardsFilePath, std::string o
 */
 void Chars::ReadCardsFromFile() {
     ifstream myCardsFile;
+    cout << "Card file path is: " << _cardFilePath << endl;
     myCardsFile.open(_cardFilePath);
     //Command currentCommand;
     std::string currentLine;
