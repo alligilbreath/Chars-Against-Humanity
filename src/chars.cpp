@@ -135,12 +135,13 @@ void Chars::ProcessCards() {
             {
                 break;
             }
-            if((*word).GetContent().length() == currBlankLength && insertedWord == false)
+            if((*word).GetContent().length() == currBlankLength)
             {
-                cout << "Looking to replace word " << endl;
+                cout << "Replacing blanks" << endl;
                 (*card).ReplaceBlanks(*word);
                 _words.erase(word);
                 insertedWord = true;
+                break;
             }
         }
         cout << "Exited the word for loop" << endl;
