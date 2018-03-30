@@ -146,7 +146,7 @@ void Chars::ProcessCards() {
             }
         }
         cout << "Exited the word for loop" << endl;
-        if(insertedWord == false && card != cards.end())
+        if(insertedWord == false && card != _cards.end())
         {
             cout << "Erasing cards" << endl;
             _cards.erase(card);
