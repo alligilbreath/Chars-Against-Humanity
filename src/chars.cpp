@@ -146,19 +146,18 @@ void Chars::ProcessCards() {
             }
         }
         cout << "Exited the word for loop" << endl;
-        if(insertedWord == false && (*card) != NULL)
+        if(insertedWord == false)
         {
             cout << "Erasing cards" << endl;
             _cards.erase(card);
+            insertedWord = false;
             cout << "Erased card" << endl;
         }
-        if((*card) == NULL)
+        if(insertedWord == true)
         {
-            break;
+            insertedWord = false;
+            card++;
         }
-        cout << "out of if statement" << endl;
-        insertedWord = false;
-        card++;
     }
     cout << "Finished this function without problems" << endl;
     return;
