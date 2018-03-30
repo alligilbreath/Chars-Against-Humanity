@@ -35,7 +35,7 @@ Card::Card(string lineFromFile){
         }
     }
     //cout << "New Line Card is " << newLine << endl;
-    for(unsigned int i = 1; i < newLine.length(); i++)
+    for(unsigned int i = 0; i < newLine.length(); i++)
     {
         //cout << "New Line length is: " << newLine.length() << endl;
        // cout << "newLine[i]: " << newLine[i] << endl;
@@ -49,6 +49,14 @@ Card::Card(string lineFromFile){
                 cout << "Blank index is: " << _blankIndex << endl;
             }
             _blankLength++;
+        }
+        if(newLine[i + 1] != '_' && i != newLine.length() - 1)
+        {
+            //make up for _blankLength issue
+            if(_blankLength == 1)
+            {
+                _blankLength = 0;
+            }
         }
     }
     //cout << "Blank index is " << _blankIndex << endl;
