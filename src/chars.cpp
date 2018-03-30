@@ -153,7 +153,8 @@ void Chars::ProcessCards() {
         insertedWord = false;
         card++;
     }
-
+    cout << "Finished this function without problems" << endl;
+    return;
 }
 
 /**
