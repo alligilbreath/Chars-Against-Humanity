@@ -148,6 +148,7 @@ void Chars::ProcessCards() {
         cout << "Exited the word for loop" << endl;
         if(insertedWord == false)
         {
+            cout << "Card content is " << (*card).GetContent() << endl;
             cout << "Erasing cards" << endl;
             _cards.erase(card);
             insertedWord = false;
