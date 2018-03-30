@@ -55,9 +55,12 @@ void Chars::ReadCardsFromFile() {
     while(!myCardsFile.eof())
     {
         getline(myCardsFile, currentLine);
+        cout << "Current line is: " << currentLine << endl;
         Card currentCard(currentLine);
+        cout << "Current card content is: " << currentCard.GetContent() << endl;
         if(currentCard.IsValid())
             {
+                cout << "Entered is valid" << endl;
                 _cards.push_back(currentCard);
             }
     }
