@@ -116,8 +116,9 @@ bool EndToEndTester::testFile(int testNum){
         //cout << "Current output line: " << currentOutput << "\n";
         if(currentMyOutput.compare(currentOutput) != 0)
         {
-            cout <<"Current myOutput line: " << currentMyOutput << "\n";
-            cout << "Current output line: " << currentOutput << "\n";
+            cout << "What it gives " << currentMyOutput.compare(currentOutput) << endl;
+            cout <<"Current myOutput line: " << currentMyOutput << endl;
+            cout << "Current output line: " << currentOutput << endl;
             myOutputStream.close();
             outputStream.close();
             return false;
