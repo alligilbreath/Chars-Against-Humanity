@@ -129,44 +129,44 @@ void Chars::ProcessCards() {
     std::list<Card>::iterator card = _cards.begin();// Create an iterator object
     while(card != _cards.end()){ // keep iterating until we hit the end
         //cout << "Card content: " << (*card).GetContent() << endl;
-        cout << "At start" << endl;
-        cout << "Card content is " << (*card).GetContent() << endl;
-        cout << "Card blank length is: " << (*card).GetBlankLength() << endl;
+//        cout << "At start" << endl;
+//        cout << "Card content is " << (*card).GetContent() << endl;
+//        cout << "Card blank length is: " << (*card).GetBlankLength() << endl;
         currBlankLength = (*card).GetBlankLength();
-        cout << "Did currBlankLength" << endl;
+//        cout << "Did currBlankLength" << endl;
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
-            cout << "Made it into word for loop" << endl;
+            //cout << "Made it into word for loop" << endl;
             if((*card).GetContent() == "")
             {
-                cout << "Content was blank" << endl;
+//                cout << "Content was blank" << endl;
                 break;
             }
             if((*word).GetContent().length() == currBlankLength)
             {
-               cout << "Replacing blanks" << endl;
+//               cout << "Replacing blanks" << endl;
                 (*card).ReplaceBlanks(*word);
                 _words.erase(word);
                 insertedWord = true;
                 break;
             }
         }
-        cout << "Exited the word for loop" << endl;
+//        cout << "Exited the word for loop" << endl;
         if(insertedWord == false)
         {
-            cout << "Erasing cards" << endl;
+//            cout << "Erasing cards" << endl;
             _cards.erase(card);
             insertedWord = false;
-            cout << "Erased card" << endl;
+//            cout << "Erased card" << endl;
         }
         else if(insertedWord == true)
         {
-            cout << "Inserted word was true" << endl;
+//            cout << "Inserted word was true" << endl;
             insertedWord = false;
             card++;
-            cout << "Added word correctly" << endl;
+//            cout << "Added word correctly" << endl;
         }
     }
-    cout << "Finished this function without problems" << endl;
+//    cout << "Finished this function without problems" << endl;
     return;
 }
 
