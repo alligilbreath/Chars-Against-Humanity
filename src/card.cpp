@@ -39,7 +39,7 @@ Card::Card(string lineFromFile){
     {
         //cout << "New Line length is: " << newLine.length() << endl;
        // cout << "newLine[i]: " << newLine[i] << endl;
-        if(newLine[i] == '_' && (newLine[i - 1] == '_' || newLine[i - 1] == ' '))
+        if(newLine[i] == '_')
         {
             //cout << "Entered this if statement " << endl;
             if(_blankLength == 0)
