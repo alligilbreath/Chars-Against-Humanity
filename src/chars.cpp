@@ -126,6 +126,10 @@ void Chars::ProcessCards() {
     while(card != _cards.end()){ // keep iterating until we hit the end
         currBlankLength = (*card).GetBlankLength();
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
+            if((*card).GetContent() == "")
+            {
+                break;
+            }
             if((*word).GetContent().length() == currBlankLength && insertedWord == false)
             {
                 (*card).ReplaceBlanks(*word);
