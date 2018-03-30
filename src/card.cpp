@@ -35,18 +35,18 @@ Card::Card(string lineFromFile){
         }
     }
     //cout << "New Line Card is " << newLine << endl;
-    for(unsigned int i = 0; i < newLine.length(); i++)
+    for(unsigned int i = 1; i < newLine.length(); i++)
     {
         //cout << "New Line length is: " << newLine.length() << endl;
        // cout << "newLine[i]: " << newLine[i] << endl;
-        if(newLine[i] == '_')
+        if(newLine[i] == '_' && (newLine[i - 1] == '_' || newLine[i - 1] == ' '))
         {
             //cout << "Entered this if statement " << endl;
             if(_blankLength == 0)
             {
                // cout << "Entered this second if statement" << endl;
-                 _blankIndex = i;
-                //cout << "Blank index is: " << _blankIndex << endl;
+                _blankIndex = i - 1;
+                cout << "Blank index is: " << _blankIndex << endl;
             }
             _blankLength++;
         }
