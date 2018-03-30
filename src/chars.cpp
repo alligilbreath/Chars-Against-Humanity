@@ -130,6 +130,7 @@ void Chars::ProcessCards() {
     while(card != _cards.end()){ // keep iterating until we hit the end
         //cout << "Card content: " << (*card).GetContent() << endl;
         cout << "At start" << endl;
+        cout << "Card content is " << (*card).GetContent() << endl;
         cout << "Card blank length is: " << (*card).GetBlankLength() << endl;
         currBlankLength = (*card).GetBlankLength();
         cout << "Did currBlankLength" << endl;
@@ -137,7 +138,7 @@ void Chars::ProcessCards() {
             cout << "Made it into word for loop" << endl;
             if((*card).GetContent() == "")
             {
-                cout << "Content was blank";
+                cout << "Content was blank" << endl;
                 break;
             }
             if((*word).GetContent().length() == currBlankLength)
@@ -152,7 +153,6 @@ void Chars::ProcessCards() {
         cout << "Exited the word for loop" << endl;
         if(insertedWord == false)
         {
-            cout << "Card content is " << (*card).GetContent() << endl;
             cout << "Erasing cards" << endl;
             _cards.erase(card);
             insertedWord = false;
