@@ -130,6 +130,7 @@ void Chars::ProcessCards() {
     while(card != _cards.end()){ // keep iterating until we hit the end
         //cout << "Card content: " << (*card).GetContent() << endl;
         cout << "At start" << endl;
+        cout << "Card blank length is: " << (*card).GetBlankLength() << endl;
         currBlankLength = (*card).GetBlankLength();
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
             if((*card).GetContent() == "")
