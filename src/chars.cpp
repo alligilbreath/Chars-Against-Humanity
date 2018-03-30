@@ -155,7 +155,7 @@ void Chars::ProcessCards() {
         }
         else if(insertedWord == true)
         {
-            cout << "Inserted word was true << endl;
+            cout << "Inserted word was true" << endl;
             insertedWord = false;
             card++;
             cout << "Added word correctly" << endl;
