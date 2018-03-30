@@ -56,7 +56,7 @@ void Chars::ReadCardsFromFile() {
     {
         getline(myCardsFile, currentLine);
         Card currentCard(currentLine);
-        if(currentCard.IsValid())
+        if(currentCard.IsValid() && currentCard.GetContent() != "")
             {
                 _cards.push_back(currentCard);
             }
