@@ -87,7 +87,7 @@ void Chars::ReadWordsFromFile() {
     //Command currentCommand;
     std::string currentLine;
     //Card currentCard;
-    
+
     if(!myWordsFile.is_open())
     {
         cout << _wordFilePath << "could not be opened." << endl;
@@ -102,9 +102,9 @@ void Chars::ReadWordsFromFile() {
         {
             _words.push_back(currentWord);
         }
-        
+
     }
-    
+
     myWordsFile.close();
     return;
 }
