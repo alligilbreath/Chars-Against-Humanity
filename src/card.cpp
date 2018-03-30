@@ -45,7 +45,7 @@ Card::Card(string lineFromFile){
             if(_blankLength == 0)
             {
                // cout << "Entered this second if statement" << endl;
-                _blankIndex = i - 1;
+                _blankIndex = i;
                 cout << "Blank index is: " << _blankIndex << endl;
             }
             _blankLength++;
