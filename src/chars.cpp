@@ -55,9 +55,9 @@ void Chars::ReadCardsFromFile() {
     while(!myCardsFile.eof())
     {
         getline(myCardsFile, currentLine);
-        cout << "Current line is: " << currentLine << endl;
+       // cout << "Current line is: " << currentLine << endl;
         Card currentCard(currentLine);
-        cout << "Current card content is: " << currentCard.GetContent() << endl;
+       // cout << "Current card content is: " << currentCard.GetContent() << endl;
         if(currentCard.IsValid())
             {
                 cout << "Entered is valid" << endl;
@@ -127,6 +127,7 @@ void Chars::ProcessCards() {
     bool insertedWord = false;
     std::list<Card>::iterator card = _cards.begin();// Create an iterator object
     while(card != _cards.end()){ // keep iterating until we hit the end
+        cout << "Card content: " << (*card).GetContent() << endl;
         currBlankLength = (*card).GetBlankLength();
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
             if((*card).GetContent() == "")
@@ -135,6 +136,7 @@ void Chars::ProcessCards() {
             }
             if((*word).GetContent().length() == currBlankLength && insertedWord == false)
             {
+                cout << "Looking to replace word " << endl;
                 (*card).ReplaceBlanks(*word);
                 _words.erase(word);
                 insertedWord = true;
