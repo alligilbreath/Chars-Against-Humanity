@@ -96,7 +96,7 @@ void Chars::ReadWordsFromFile() {
     while(!myWordsFile.eof())
     {
         getline(myWordsFile, currentLine);
-        cout << "Current line is: " << currentLine << endl;
+       // cout << "Current line is: " << currentLine << endl;
         Word currentWord(currentLine);
         if(currentWord.IsValid())
         {
@@ -179,6 +179,7 @@ void Chars::WriteCardsToFile() {
         myOutputFile << (*card).GetContent() << "\r\n";
         card++;
     }
-    
+    myOutputFile.close();
+    return;
 
 }
