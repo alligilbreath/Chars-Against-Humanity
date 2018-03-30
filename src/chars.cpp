@@ -129,6 +129,7 @@ void Chars::ProcessCards() {
     std::list<Card>::iterator card = _cards.begin();// Create an iterator object
     while(card != _cards.end()){ // keep iterating until we hit the end
         //cout << "Card content: " << (*card).GetContent() << endl;
+        cout << "At start" << endl;
         currBlankLength = (*card).GetBlankLength();
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
             if((*card).GetContent() == "")
@@ -150,6 +151,7 @@ void Chars::ProcessCards() {
             cout << "Erasing cards" << endl;
             _cards.erase(card);
         }
+        cout << "out of if statement" << endl;
         insertedWord = false;
         card++;
     }
