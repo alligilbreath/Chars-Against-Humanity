@@ -123,13 +123,6 @@ bool EndToEndTester::testFile(int testNum){
             return false;
         }
     }
-    //to check if myOutputStream reached end of file before outputStream
-//    if(myOutputStream.eof() != outputStream.eof())
-//    {
-//        myOutputStream.close();
-//        outputStream.close();
-//        return false;
-//    }
     
     myOutputStream.close();
     outputStream.close();
