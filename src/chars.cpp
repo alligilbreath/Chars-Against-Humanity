@@ -136,7 +136,7 @@ void Chars::ProcessCards() {
 //        cout << "Did currBlankLength" << endl;
         for(std::list<Word>::iterator word = _words.begin(); word != _words.end(); word++){
             //cout << "Made it into word for loop" << endl;
-            if((*card).GetContent() == "")
+            if((*card).GetContent() == "" || (*word).GetContent() == "")
             {
 //                cout << "Content was blank" << endl;
                 break;
